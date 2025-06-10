@@ -3,7 +3,7 @@ function [A,B] = fourierCoeff(x)
 % coefficents of the fourier series representation of signal x
 
 L = length(x);
-fft_x = fft(x,L-1);
+fft_x = fft(x,L);
 
 % Normalized fft
 nfft_x = fft_x/L;
